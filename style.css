@@ -1,0 +1,209 @@
+body{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+  }
+
+.hamburger{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: teal;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    list-style-type: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: teal;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: rgb(3, 34, 34);
+    background: rgb(216, 242, 114);
+
+}
+.nav-bar ul li a.active{
+    color: rgb(3, 34, 34);
+    background: rgb(216, 242, 114);
+}
+
+@media  only screen and (max-width:1320px) {
+    header{
+        padding: 0 50px;
+    }
+    
+}
+
+@media  only screen and (max-width:1100px) {
+    header{
+        padding: 0 30px;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background :teal;
+        margin: 6px 0;
+        
+        
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fefefe;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+       
+
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        
+      
+        
+    }
+    .nav-bar.active{
+        opacity: 1;
+    }
+    .nav-bar ul  li a{
+        margin-bottom: 12px;
+
+    }
+}
+
+
+
+i{
+    padding-right: 5px;
+}
+
+.home-row{
+    background-image: url('images/manufacturing-image.png');
+    height: 500px;
+    margin-top: 100px !important;
+    
+}
+.home-col{
+    margin-top: 150px !important;
+    
+    height: 200px !important;
+    border-radius: 10px;
+}
+.home-col h2{
+    color: teal;
+}
+.home-col a{
+    margin-top: 15px;
+}
+.about-us-row{
+    height: auto;
+    
+}
+.about-us-h1{
+    text-align: center !important ;
+    margin-top: 30px !important;
+}
+
+
+.products-row{
+    height: auto;
+    
+}
+.products-h1{
+    text-align: center !important ;
+    margin-top: 30px !important;
+}
+.products-row .col-md-3{
+    margin-left: 5px !important;
+}
+.products-row .div .img{
+    height: 80% !important;
+    width: 100%;
+}
+.features-row{
+    height: auto;
+}
+.features-row .col-md-3{
+    background: rgb(89, 89, 243);
+    border: solid 2px coral;
+    border-radius: 10px;
+    margin-left: 6px;
+    
+}
+
+
+.contact-me-col{
+    margin-top: 30px !important;
+    height: 500px;
+    border: solid 2px teal;
+    
+}
+.contact-me-col input{
+    margin-top: 10px;
+}
+
+.text-area-row{
+    margin-top: 10px !important;
+    height: 150px;
+    
+}
+.button-row{
+    margin-top: 20px !important;
+}
+
+
+
+
+
+
+
+
+
